@@ -1,0 +1,123 @@
+Settings for GEOROC data parser
+
+Import path :"http://georoc.mpch-mainz.gwdg.de/georoc/Csv_Downloads/Archean_Cratons_comp/AMAZONIA_CRATON.csv"
+Location filter :"CARAJAS"
+Column filter :"SIO2.WT.., MGO.WT.., CAO.WT.."
+Reference year cutoff :1990
+Standardize Fe :TRUE
+Standardize minor elements :TRUE
+Figures :"TAS, MGO.WT.. vs CAO.WT.."
+Make noises :TRUE
+
+**********
+
+Note that the settings parameters should have the following formats:
+
+GEOROC data path : a string in quotes with either a URL to the link which downloads the GEOROC file OR a string in quotes with the complete file path to a pre-downloaded file in the user's directory
+
+Location filter : a string in quotes corresponding to rows the user wants to KEEP from the "LOCATION" column in the georoc file. Rows missing this string from the "LOCATION" column will be discarded.
+
+Column filter : a string in quotes corresponding to desired column names using the format shown below. (R replaces spaces and percent signs (%) with periods when they occur as column labels) 
+
+Standardize Fe : TRUE or FALSE -- whether to standardize FeO and/or Fe2O3 to total Fe (FeO*)
+
+Column names
+> colnames(Import)
+  [1] "CITATIONS"        "TECTONIC.SETTING" "LOCATION"         "LOCATION.COMMENT" "LATITUDE.MIN"    
+  [6] "LATITUDE.MAX"     "LONGITUDE.MIN"    "LONGITUDE.MAX"    "LAND.OR.SEA"      "ELEVATION.MIN"   
+ [11] "ELEVATION.MAX"    "SAMPLE.NAME"      "ROCK.NAME"        "MIN..AGE..YRS.."  "MAX..AGE..YRS.." 
+ [16] "GEOL."            "AGE"              "ERUPTION.DAY"     "ERUPTION.MONTH"   "ERUPTION.YEAR"   
+ [21] "ROCK.TEXTURE"     "ROCK.TYPE"        "DRILL.DEPTH.MIN"  "DRILL.DEPTHAX"    "ALTERATION"      
+ [26] "MINERAL"          "MATERIAL"         "SIO2.WT.."        "TIO2.WT.."        "B2O3.WT.."       
+ [31] "AL2O3.WT.."       "CR2O3.WT.."       "FE2O3.WT.."       "FEO.WT.."         "FEOT.WT.."       
+ [36] "CAO.WT.."         "MGO.WT.."         "MNO.WT.."         "NIO.WT.."         "K2O.WT.."        
+ [41] "NA2O.WT.."        "P2O5.WT.."        "H2O.WT.."         "H2OP.WT.."        "H2OM.WT.."       
+ [46] "H2OT.WT.."        "CO2.WT.."         "CO1.WT.."         "F.WT.."           "CL.WT.."         
+ [51] "CL2.WT.."         "OH.WT.."          "CH4.WT.."         "SO2.WT.."         "SO3.WT.."        
+ [56] "SO4.WT.."         "S.WT.."           "LOI.WT.."         "VOLATILES.WT.."   "O.WT.."          
+ [61] "OTHERS.WT.."      "HE.CCM.G."        "HE.CCMSTP.G."     "HE3.CCMSTP.G."    "HE3.AT.G."       
+ [66] "HE4.CCM.G."       "HE4.CCMSTP.G."    "HE4.AT.G."        "HE4.MOLE.G."      "HE4.NCC.G."      
+ [71] "HE.NCC.G."        "LI.PPM."          "BE.PPM."          "B.PPM."           "C.PPM."          
+ [76] "CO2.PPM."         "F.PPM."           "NA.PPM."          "MG.PPM."          "AL.PPM."         
+ [81] "P.PPM."           "S.PPM."           "CL.PPM."          "K.PPM."           "CA.PPM."         
+ [86] "SC.PPM."          "TI.PPM."          "V.PPM."           "CR.PPM."          "MN.PPM."         
+ [91] "FE.PPM."          "CO.PPM."          "NI.PPM."          "CU.PPM."          "ZN.PPM."         
+ [96] "GA.PPM."          "GE.PPM."          "AS.PPM."          "SE.PPM."          "BR.PPM."         
+[101] "RB.PPM."          "SR.PPM."          "Y.PPM."           "ZR.PPM."          "NB.PPM."         
+[106] "MO.PPM."          "RU.PPM."          "RH.PPM."          "PD.PPM."          "AG.PPM."         
+[111] "CD.PPM."          "IN.PPM."          "SN.PPM."          "SB.PPM."          "TE.PPM."         
+[116] "I.PPM."           "CS.PPM."          "BA.PPM."          "LA.PPM."          "CE.PPM."         
+[121] "PR.PPM."          "ND.PPM."          "SM.PPM."          "EU.PPM."          "GD.PPM."         
+[126] "TB.PPM."          "DY.PPM."          "HO.PPM."          "ER.PPM."          "TM.PPM."         
+[131] "YB.PPM."          "LU.PPM."          "HF.PPM."          "TA.PPM."          "W.PPM."          
+[136] "RE.PPM."          "OS.PPM."          "IR.PPM."          "PT.PPM."          "AU.PPM."         
+[141] "HG.PPM."          "TL.PPM."          "PB.PPM."          "BI.PPM."          "TH.PPM."         
+[146] "U.PPM."           "ND143_ND144"      "ND143_ND144_INI"  "EPSILON_ND"       "SR87_SR86"       
+[151] "SR87_SR86_INI"    "PB206_PB204"      "PB206_PB204_INI"  "PB207_PB204"      "PB207_PB204_INI" 
+[156] "PB208_PB204"      "PB208_PB204_INI"  "OS184_OS188"      "OS186_OS188"      "OS187_OS186"     
+[161] "OS187_OS188"      "RE187_OS186"      "RE187_OS188"      "HF176_HF177"      "HE3_HE4"         
+[166] "HE3_HE4.R.R.A.."  "HE4_HE3"          "HE4_HE3.R.R.A.."  "K40_AR40"         "AR40_K40"        
+[171] "UNIQUE_ID"
+
+**********
+
+TAS diagram parameters
+
+Name	SiO2	NaK
+line	40.94352011	0.829629035
+line	40.82112027	7.150159926
+line	44.9499205	0.798115331
+line	44.95940069	5.265544091
+line	51.87615054	0.701567827
+line	51.88591163	5.301364847
+line	51.88591163	5.301364847
+line	49.31038859	7.616792818
+line	49.31038859	7.616792818
+line	44.90111505	9.79913023
+line	56.90142604	0.80282366
+line	56.91301295	6.263014367
+line	56.91301295	6.263014367
+line	52.91363493	9.603734561
+line	52.91363493	9.603734561
+line	48.16504065	11.88521441
+line	62.94543621	0.970664901
+line	62.89115332	7.390498738
+line	62.89115332	7.390498738
+line	57.46862256	12.0874318
+line	57.46862256	12.0874318
+line	50.95593967	15.06314946
+line	76.59480947	1.075318222
+line	68.46164534	8.418546404
+line	68.46164534	8.418546404
+line	67.99746693	13.67999746
+line	40.94829532	3.079889448
+line	44.88692987	3.114533121
+line	44.95933047	5.232452026
+line	51.81800535	5.301338095
+line	51.81800535	5.301338095
+line	68.46164534	8.418546404
+line	45.02730697	5.265570843
+line	60.39203363	13.71009331
+line	40.82119049	7.183251991
+line	52.17705893	14.50106589
+Picrobasalt	1.75	43
+Basalt	2.5	48
+Basaltic Andesite	3.5	54
+Andesite	3.5	59
+Dacite	4	67
+Rhyolite	8	73
+Trachybasalt	6	49
+Basaltic Trachyandesite	7	53
+Trachyandesite	8	57
+Trachyte	11	65
+Basanite	6	43
+Phono-tephrite	9.5	49
+Tephri-phonolite	11.5	53
+Phonolite	14	57
+Foidite	8.5	39
+
+Note: If you're lazy like me, you will want to configure your path so you can run this script whtough a batch file:
+
+echo off
+rscript "Georoc parser.R"
+cmd /k 
