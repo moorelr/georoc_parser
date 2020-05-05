@@ -1,0 +1,70 @@
+Elements used for norm (copy from below)
+
+Rb	0.6
+Ba	6.6
+Th	0.0795
+Nb	0.658
+Ta	0.037
+K	240
+La	0.648
+Ce	1.675
+Pb	0.15
+Sr	19.9
+P	90
+Nd	1.25
+Zr	10.5
+Sm	0.406
+Eu	0.154
+Gd	0.544
+Ti	1205
+Dy	0.674
+Y	4.3
+
+**********
+
+Reference compositions:
+
+1) McDonough & Sun Pyrolite
+
+Cs	0.021
+Rb	0.6
+Ba	6.6
+Th	0.0795
+U	0.0203
+Nb	0.658
+Ta	0.037
+K	240
+La	0.648
+Ce	1.675
+Pb	0.15
+Pr	0.254
+Sr	19.9
+P	90
+Nd	1.25
+Zr	10.5
+Sm	0.406
+Eu	0.154
+Gd	0.544
+Ti	1205
+Dy	0.674
+Y	4.3
+Yb	0.441
+Lu	0.0675
+
+2) Sun+McDon. 1989 Chondrite REEs
+
+La	0.237
+Ce	0.612
+Pr	0.095
+Nd	0.467
+Pm	1
+Sm	0.153
+Eu	0.058
+Gd	0.2055
+Tb	0.0374
+Dy	0.254
+Ho	0.0566
+Er	0.1655
+Tm	0.0255
+Yb	0.17
+Lu	0.0254
