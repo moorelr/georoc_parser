@@ -1,5 +1,7 @@
 # georoc_parser
 
+email moorelr@vt.edu for comments
+
 R Script to download, format, and filter precompiled GEOROC data
 
 Workflow:
