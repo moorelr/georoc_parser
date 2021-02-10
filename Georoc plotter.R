@@ -1,15 +1,6 @@
 # moorelr/georoc-parser is licensed under The MIT License
 # Copyright 2019 Lowell R. Moore
 
-# TO-DO
-#   - Default to no beep
-#   - Better commenting and text output
-#   - Option to load from local georoc file
-#   - All plots on one figure
-#   - Setting for dot size, color, shape
-#   - Default to more sensible elements
-#   - Plotting in separate script
-
 # Read info from settings file ####
 
 # To import the settigs, I do a brute-force count of the rows in the text file. Sorry!
