@@ -1,13 +1,15 @@
 Settings for GEOROC data parser
 
-Import path :"http://georoc.mpch-mainz.gwdg.de/georoc/Csv_Downloads/Ocean_Island_Groups_comp/HAWAIIAN_ISLANDS_part2.csv"
+Import path :"http://georoc.mpch-mainz.gwdg.de/georoc/Csv_Downloads/Continental_Flood_Basalts_comp/YELLOWSTONE-SNAKE_RIVER_PLAIN_VOLCANIC_PROVINCE.csv"
 Location filter :
 Column filter :"SIO2.WT.., MGO.WT.., CAO.WT.., K2O.WT.."
 Reference year cutoff :1990
 Standardize Fe :TRUE
 Standardize minor elements :TRUE
-Figures :"TAS, MGO.WT.. vs CAO.WT.., MGO.WT.. vs K2O.WT.., K2O.WT.. vs CL.PPM., K2O.WT.. vs CL.WT.., K2O.WT.. vs F.WT.., K2O.WT.. vs F.PPM."
-Make noises :TRUE
+Figures :"TAS, MGO.WT.. vs SIO2.WT.., MGO.WT.. vs TIO2.WT.., MGO.WT.. vs AL2O3.WT.., MGO.WT.. vs FE2O3.WT.., MGO.WT.. vs CR2O3.WT.., MGO.WT.. vs FEO.WT.., MGO.WT.. vs MNO.WT.., MGO.WT.. vs NIO.WT.., MGO.WT.. vs CAO.WT.., MGO.WT.. vs NA2O.WT.., MGO.WT.. vs K2O.WT.., MGO.WT.. vs P2O5.WT.., MGO.WT.. vs FeO_total"
+Make noises :FALSE
+Plot point size :0.7
+Plot point opacity :0.3
 
 **********
 
