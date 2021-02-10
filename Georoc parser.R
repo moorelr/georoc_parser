@@ -1,15 +1,6 @@
 # moorelr/georoc-parser is licensed under The MIT License
 # Copyright 2019 Lowell R. Moore
 
-# TO-DO
-#   - Default to no beep
-#   - Better commenting and text output
-#   - Option to load from local georoc file
-#   - All plots on one figure
-#   - Setting for dot size, color, shape
-#   - Default to more sensible elements
-#   - Plotting in separate script
-
 # Read info from settings file
 Settings <- read.table("Settings.txt", header = FALSE, sep = ":", skip = 2, nrows = 8, stringsAsFactors = FALSE)
 rownames(Settings) <- Settings[,1]
@@ -69,7 +60,7 @@ if(nrow(flag) > 0){
 }
 
 print(paste("File loaded with", nrow(Import), "rows."))# and columns:", paste(colnames(Import), collapse = " ")))
-print("Thanks Bärbel et al!")
+print("Thanks BÃ¤rbel et al!")
 if(make_noises){beep(1)}
 Sys.sleep(2)
 
